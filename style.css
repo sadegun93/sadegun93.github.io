@@ -1,0 +1,61 @@
+html
+{
+    background-color: #467599;
+}
+h1, .colorText, a
+{
+    color: #D64045;
+}
+p
+{
+    color: #F6F8FB;
+}
+a:hover
+{
+    color: #DB575B;
+}
+a:visited
+{
+    color: #D4353A;
+}
+h1, h2
+{
+    text-align: center;
+}
+#portrait
+{
+    max-height: 75%;
+    max-width: 50%;
+    align-self: center;
+}
+
+
+main, #AboutMe, #Changeling, #Reciprocity, #TeamBuilder
+{
+    display: grid;
+}
+#AboutMe, #Changeling, #Reciprocity, #TeamBuilder
+{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.grid-item-1
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 20px;
+}
+.grid-item-2
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    padding: 20px;
+}
+.grid-item-3
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    padding: 20px;
+}

@@ -1,6 +1,7 @@
 html
 {
-    background-color: #467599;
+    /*background-color: #467599;*/
+    background-color: #9ed8db;
 }
 h1, .colorText, a
 {
@@ -9,6 +10,11 @@ h1, .colorText, a
 p
 {
     color: #F6F8FB;
+    font-family:Arial, Helvetica, sans-serif;
+}
+p, a, .colorText
+{
+    font-size: large;
 }
 a:hover
 {

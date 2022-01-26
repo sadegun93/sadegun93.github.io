@@ -39,15 +39,24 @@ h1, h2
 }
 
 
-main, #AboutMe, #Changeling, #Reciprocity, #TeamBuilder
+main, #AboutMe, #Changeling, #Reciprocity, #TeamBuilder, nav
 {
     display: grid;
 }
-#AboutMe, #Changeling, #Reciprocity, #TeamBuilder
+#AboutMe, #Changeling, #Reciprocity, #TeamBuilder, nav
 {
     grid-template-columns: auto;
     grid-template-rows: auto;
     margin: auto;
+}
+#navName
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#navLinks
+{
+    grid-column-start: 3;
 }
 .grid-item-1
 {

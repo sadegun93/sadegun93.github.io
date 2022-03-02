@@ -4,21 +4,19 @@
 <!---->
 
 <head>
-    <title>Stephen Adegun's Coding Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Stephen Adegun</title>
+    <link rel="stylesheet" href="oldStyle.css">
 </head>
 
 <header>
     <!--Name and in page navigation; take a page out of Lars's book-->
     <!--About me, Project Gallery, Resume (Embed?), Contacts (In Footer)-->
     <nav>
-        <div class = "flex-container" id="NavFlex">
-            <h1 id="navName">Stephen Adegun</h1>
-            <div id="navLinks">
-                <a href="index-2.html">Home</a>
-                <a href="creativeProjects.html">Creative Projects</a>
-                <a href="#Contact">Contact Me</a>
-            </div>
+        <p id="navName">Stephen Adegun</p>
+        <div id="navLinks">
+            <a href="#AboutMe">About Me</a>
+            <a href="#ProjectGallery">Project Gallery</a>
+            <a href="#Contact">Contact Me</a>
         </div>
     </nav>
 </header>
@@ -26,16 +24,29 @@
 <body>
     <main>
 
-        <section id="ProgrammingProjects">
+        <section id="AboutMe">
+            <h1 class="grid-item-1">
+                About Me
+            </h1>
+            <!--Image is massive; will need to be resized with CSS-->
+            <img class="grid-item-2" src="IMG_5106.webp" alt="A photo of myself" id="portrait"> <!--width="15%" height ="15%"--> 
+            <p class="grid-item-3"> 
+                My name is Stephen Adegun, and I'm a Fourth Year Game Design and Development student at the Rochester Institute of Technology.
+                A lifelong lover of video games and writer, it's my dream to be able to create games and interactive experiences for people to get immersed in, enjoy, and use to ways to connect with others.
+                Other than having a passion for game design and writing, I'm also a skilled programmer, being familiar with Unreal Engine, Unity, C#, Javascript, and C++.
+            </p>
+        </section>
+
+        <section id="ProjectGallery">
             <h1>
-                Programming Project Gallery
+                Project Gallery
             </h1>
 
             <!--Project Heading-->
             <!--Video Embedded on One Side, with description next to it-->
             <!--Alternate left and right for videos and descriptions?-->
 
-            <section class="grid" id="Changeling">
+            <section id="Changeling">
                 <h2 class="grid-item-1"><a href="https://www.changelingvr.com/">Changeling</a></h2>
                 <iframe class="grid-item-2" width="560" height="315" src="https://www.youtube.com/embed/nZGJtnUvC2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p class="grid-item-3">
@@ -46,18 +57,17 @@
             </section>
 
             <!--Replace with Actual Global Game Jam Project when complete-->
-            <section class="grid" id="BraveMagnet" class="colorText">
-                <h2 class="grid-item-1"><a href="https://globalgamejam.org/2022/games/brave-magnet-9">Brave Magnet</a></h2>
+            <section id="BraveMagnet" class="colorText">
+                <h2 class="grid-item-1">Brave Magnet</h2>
                 <p class="grid-item-2">
                     During January, I was involved in the Global Game Jam, working alongside fellow RIT students and students from Japan's Kyoto Computer Gakuin.
                     Over the course of a few days, we were able to build this game. I was in charge of player movement and magnetism, both of which were core to the game.
                 </p>
-                <iframe class = "grid-item-3" width="560" height="315" src="https://www.youtube.com/embed/GSjJtCmXR90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <!--<iframe class="grid-item-3" width="560" height="315" src="https://www.youtube.com/embed/GSjJtCmXR90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 <!--<iframe src="https://drive.google.com/file/d/1uvy42QLfnUZU4aSKFrsKi7-YkAVP3_-B/preview" width="640" height="480" allow="autoplay"></iframe>-->
             </section>
 
-            <section class="grid" id="TeamBuilder">
+            <section id="TeamBuilder">
                 <h2 class="grid-item-1"><a href="https://people.rit.edu/saa9310/330/p2_pokemon_teams/">Pokemon Team Builder</a></h2>
                 <iframe class="grid-item-2" width="560" height="315" src="https://www.youtube.com/embed/pUFQV_GvKs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p class="grid-item-3">
@@ -76,7 +86,7 @@
 <footer id="Contact" class="colorText">
     <h2>Contact</h2>
     <!--Resume-->
-    <h3 class="colorText">Programming Resume</h3>
+    <h3 class="colorText">Resume</h3>
     <p>
         <a href="Feb2022Resume.pdf" target="blank">Open Resume</a> | <a href="Feb2022Resume.pdf" download>Download Resume</a>
     </p>

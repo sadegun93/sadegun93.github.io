@@ -1,7 +1,7 @@
 html
 {
     /*background-color: #467599;*/
-    background-color: #9ed8db;
+    background-color: #f6f8fb;
 }
 h1, .colorText, a
 {
@@ -9,20 +9,23 @@ h1, .colorText, a
 }
 p
 {
-    color: #F6F8FB;
-    font-family:Arial, Helvetica, sans-serif;
+    color: #1d3354;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-p, a, .colorText
+
+/*p, a, .colorText
 {
     font-size: large;
-}
+}*/
+
 a:hover
 {
     color: #DB575B;
 }
 a:visited
 {
-    color: #D4353A;
+    /*color: #D4353A;*/
+    color: #467599;
 }
 h1, h2
 {
@@ -33,30 +36,57 @@ h1, h2
     /*max-height: 75%;
     max-width: 50%;
     align-self: center;*/
-    width: 60%;
+    width: 150%;
     height: 100%;
     margin: auto;
 }
 
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+}
 
-main, #AboutMe, #Changeling, #BraveMagnet, #TeamBuilder, nav
+.vertical-flex-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header
+{
+    background-color: #98d8db;
+    margin: 0px;
+    border: 1px;
+}
+
+#AboutMeFlex
+{
+    justify-content: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+#AboutMe
+{
+    margin-bottom: 75px;
+}
+
+.grid/*main, #AboutMe, #Changeling, #BraveMagnet, #TeamBuilder*/
 {
     display: grid;
 }
-#AboutMe, #Changeling, #BraveMagnet, #TeamBuilder, nav
+.grid/*#AboutMe, #Changeling, #BraveMagnet, #TeamBuilder*/
 {
     grid-template-columns: auto;
     grid-template-rows: auto;
     margin: auto;
-}
-#navName
-{
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-#navLinks
-{
-    grid-column-start: 3;
 }
 .grid-item-1
 {

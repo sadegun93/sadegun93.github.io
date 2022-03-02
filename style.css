@@ -36,8 +36,10 @@ h1, h2
     /*max-height: 75%;
     max-width: 50%;
     align-self: center;*/
-    width: 150%;
-    height: 100%;
+    /*width: 150%;
+    height: 100%;*/
+    width: 50%;
+    height: 75%;
     margin: auto;
 }
 
